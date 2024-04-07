@@ -21,9 +21,9 @@ export default function Movies({ items }) {
   }
   const movies = data
     .map((item) => (
-      <Link className="list-element" href= {`/${item.id}`}>
+      <Link className="list-element" href= {`/${item.id}`}  key={item.id}>
       <ListElement
-        key={item.id}
+        // key={item.id}
         title={item.title}
         image={`http://image.tmdb.org/t/p/w500/${item.poster_path}`}
         rate={item.vote_average.toFixed(2)}
