@@ -18,16 +18,38 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #141414;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.list-element {
+  width: 30%;
+  transition: 0.3s;
+}
+
+li img {
+  object-fit: cover;
+}
+
+.list-element:hover {
+  transform: scale(1.1);
+  /* transition: 0.3s ease;/ */
+}
+
+@media (max-width: 768px) { 
+  ul {
+    flex-wrap: wrap;
+  }
+  .list-element {
+    width: 100%;
+  }
+  .list-element:hover {
+   transform: scale(1);
+    /* transition: 0.3s ease;/ */
   }
 }
