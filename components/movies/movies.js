@@ -56,8 +56,8 @@ export default function Movies({ items }) {
   return (
     <>
       <div className="flex justify-between mb-10">
-        <Button buttonBGC="bg-rose-700 hover:bg-rose-600" buttonTitle="Fetch Data" buttonHandler={fetchDataHandler} />
-        <Button buttonBGC="bg-emerald-700 hover:bg-emerald-600" buttonTitle="Clean Data" buttonHandler={cleanDataHandler} />
+        <Button buttonBGC="bg-yellow-400/75 hover:bg-yellow-500" buttonTitle="Fetch Data" buttonHandler={fetchDataHandler} />
+        <Button buttonBGC="bg-pink-600/75 hover:bg-pink-700" buttonTitle="Clean Data" buttonHandler={cleanDataHandler} />
       </div>
       {isSubMenu && <section className="flex items-center mb-10">
         <h2 className="text-xl md:text-2xl text-white font-mono me-2 md:me-4">Sort by:</h2>

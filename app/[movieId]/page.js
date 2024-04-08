@@ -27,7 +27,7 @@ export default async function Movie({ params }) {
     <>
     <MainHeader headerClass="mt-8 md:mt-16"/>
      <Card cardClass="p-4">
-     <Link href="/"><Button buttonBGC="color-white border-2 border-white py-2 hover:bg-white hover:text-black" buttonTitle="Back" /></Link>
+     <Link href="/"><Button buttonBGC="color-white p-2 bg-yellow-400/75 hover:bg-yellow-500" buttonTitle="Back" /></Link>
       {result.map((item) => (
         <SelectedMovie cardClass={"border-2 border-white w-full md:w-1/2"} key={item.id}  title={item.title}
         overview={item.overview}
